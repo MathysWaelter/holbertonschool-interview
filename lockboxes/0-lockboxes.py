@@ -10,18 +10,13 @@ def canUnlockAll(boxes):
     """
     unlocked_boxes = [0]
 
-    # If the unlocked boxes are not in box then add them to unlocked_boxes.
     while True:
         Check = False
-        # Add unlocked boxes to unlocked_boxes.
         for i in unlocked_boxes:
-            # Add unlocked boxes to unlocked_boxes.
             for key in boxes[i]:
-                # Add a box to unlocked_boxes.
                 if key not in unlocked_boxes:
                     unlocked_boxes.append(key)
                     Check = True
-        # If true break the loop until the next call to this function is true.
         if not Check:
             break
 
